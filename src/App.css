@@ -286,6 +286,7 @@
   display: grid;
   gap: 12px;
   align-content: start;
+  margin-top: -6px;
 }
 
 .cover-tech-panel {
@@ -321,8 +322,8 @@
 }
 
 .cover-tech-icon {
-  width: 26px;
-  height: 26px;
+  width: 30px;
+  height: 30px;
   padding: 2px;
 }
 

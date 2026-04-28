@@ -17,7 +17,7 @@ export function CoverPage({ pageIndex, active, goToPage }) {
         <br />
         Fidelino
       </div>
-      <div className="title-line">// Full Stack Developer & QA Engineer</div>
+      <div className="title-line">// Full Stack Developer (end-to-end delivery)</div>
       <div className="cover-layout">
         <div className="cover-copy">
           <div className="tagline-block">

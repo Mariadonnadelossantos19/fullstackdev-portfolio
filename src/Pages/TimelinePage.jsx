@@ -16,31 +16,24 @@ export function TimelinePage({ pageIndex, active }) {
       />
       <div className="timeline">
         <TimelineEntry
-          year="2024"
+          year="2025"
           showLine
-          role="Senior Full Stack Developer"
-          company="TechCorp Solutions"
-          period="Jan 2024 — Present · Full-time"
-          description="Led development of microservices architecture serving 50k+ users. Reduced API response time by 40% through Redis caching and database optimization."
+          role="Full Stack Developer"
+          company="Department of Science and Technology-MIMAROPA"
+          period="August 2025 — Present · Full-time"
+          description="Lead end-to-end development and maintenance of the Department of Science and Technology-MIMAROPA website using CodeIgniter and MySQL. As the primary developer, handle system analysis, QA validation, and project coordination to deliver reliable, user-focused releases."
         />
         <TimelineEntry
-          year="2022"
+          year="2025"
           dotClassName="qa"
           showLine
-          role="QA Engineer & Full Stack Dev"
-          company="Digital Innovate PH"
+          role="QA Analyst"
+          company="Department of Science and Technology-Marinduque"
           companyAccent
-          period="Jun 2022 — Dec 2023 · Full-time"
-          description="Built and maintained automated test suites while contributing to frontend and backend features. Wrote 500+ test cases with 95% coverage."
+          period="January 2025 — May 2025 · Internship"
+          description="Developed and maintained automated test suites while supporting frontend and backend feature delivery. Authored 500+ test cases and helped sustain high test coverage to strengthen release quality and reduce production defects."
         />
-        <TimelineEntry
-          year="2021"
-          showLine={false}
-          role="Junior Web Developer"
-          company="StartupHub Manila"
-          period="Mar 2021 — May 2022 · Full-time"
-          description="Developed responsive web applications with React and Node.js. Collaborated with designers to implement pixel-perfect UI components."
-        />
+        
       </div>
     </PortfolioPage>
   )

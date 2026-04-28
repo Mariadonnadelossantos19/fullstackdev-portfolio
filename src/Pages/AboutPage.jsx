@@ -25,9 +25,9 @@ export function AboutPage({ pageIndex, active }) {
           <span className="hl">/**</span>
           <br />
           &nbsp;* Hi, I&apos;m <span className="hl">Maria Donna Fidelino</span>, a{' '}
-          <span className="hl2">Full Stack Developer</span> and
+          <span className="hl2">Full Stack Developer</span> with
           <br />
-          &nbsp;* <span className="hl3">QA Engineer</span> with <span className="hl">2 years of experience</span> in
+          &nbsp;* <span className="hl">2 years of experience</span> in
           <br />
           &nbsp;* building and testing web and hybrid applications.
           <br />
@@ -40,11 +40,15 @@ export function AboutPage({ pageIndex, active }) {
           <br />
           &nbsp;*
           <br />
-          &nbsp;* I can independently handle projects from planning
+          &nbsp;* I independently handle projects from planning
           <br />
           &nbsp;* to deployment, delivering complete, functional, and
           <br />
           &nbsp;* reliable systems that meet organizational requirements.
+          <br />
+          &nbsp;* This includes system analysis, QA, and project coordination
+          <br />
+          &nbsp;* as part of full-stack ownership in lean teams.
           <br />
           &nbsp;*
           <br />
@@ -54,7 +58,7 @@ export function AboutPage({ pageIndex, active }) {
           <br />
           &nbsp;*
           <br />
-          &nbsp;* With experience in both development and QA, I ensure
+          &nbsp;* I ensure
           <br />
           &nbsp;* systems are not only functional but also well-tested
           <br />
