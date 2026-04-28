@@ -16,7 +16,7 @@ export function AboutPage({ pageIndex, active }) {
         }
       />
       <div className="stats-row">
-        <StatCard value="3+" label="YEARS EXP" />
+        <StatCard value="2+" label="YEARS EXP" />
         <StatCard value="15+" label="PROJECTS SHIPPED" />
         <StatCard value="500+" label="TEST CASES WRITTEN" />
       </div>
@@ -24,30 +24,41 @@ export function AboutPage({ pageIndex, active }) {
         <div className="about-text">
           <span className="hl">/**</span>
           <br />
-          &nbsp;* Hi, I&apos;m <span className="hl">Maria Donna</span> — a{' '}
+          &nbsp;* Hi, I&apos;m <span className="hl">Maria Donna Fidelino</span>, a{' '}
           <span className="hl2">Full Stack Developer</span> and
           <br />
-          &nbsp;* <span className="hl3">QA Engineer</span> who lives at the intersection of
+          &nbsp;* <span className="hl3">QA Engineer</span> with <span className="hl">2 years of experience</span> in
           <br />
-          &nbsp;* building and breaking software.
-          <br />
-          &nbsp;*
-          <br />
-          &nbsp;* I architect scalable web applications from
-          <br />
-          &nbsp;* <span className="hl">database schemas</span> to <span className="hl2">pixel-perfect UIs</span>,
-          <br />
-          &nbsp;* while maintaining a rigorous testing mindset
-          <br />
-          &nbsp;* that catches bugs before users ever see them.
+          &nbsp;* building and testing web and hybrid applications.
           <br />
           &nbsp;*
           <br />
-          &nbsp;* I believe great software is written with empathy:
+          &nbsp;* I specialize in <span className="hl2">Laravel</span>, <span className="hl2">MERN stack</span>,
           <br />
-          &nbsp;* empathy for the <span className="hl3">user</span>, the <span className="hl">team</span>, and the next
+          &nbsp;* <span className="hl2">CodeIgniter</span>, and both <span className="hl3">SQL</span> and{' '}
+          <span className="hl3">NoSQL</span> databases.
           <br />
-          &nbsp;* developer who inherits your code.
+          &nbsp;*
+          <br />
+          &nbsp;* I can independently handle projects from planning
+          <br />
+          &nbsp;* to deployment, delivering complete, functional, and
+          <br />
+          &nbsp;* reliable systems that meet organizational requirements.
+          <br />
+          &nbsp;*
+          <br />
+          &nbsp;* I focus on building practical and efficient solutions
+          <br />
+          &nbsp;* that improve workflows and support real-world use.
+          <br />
+          &nbsp;*
+          <br />
+          &nbsp;* With experience in both development and QA, I ensure
+          <br />
+          &nbsp;* systems are not only functional but also well-tested
+          <br />
+          &nbsp;* and production-ready.
           <br />
           &nbsp;* <span className="hl">*/</span>
         </div>
