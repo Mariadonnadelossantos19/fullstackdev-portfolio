@@ -6,10 +6,11 @@ const PROJECTS = [
   {
     previewClass: 'p1',
     icon: '⚡',
-    title: 'DevFlow SaaS Platform',
+    title: 'PMNS Portal',
     description:
-      'End-to-end project management tool with real-time collaboration and CI/CD pipeline integration.',
-    tags: ['Next.js', 'PostgreSQL', 'Docker'],
+      'Project Monitoring and Notification System for DOST-MIMAROPA, designed to streamline tracking, updates, and reporting workflows.',
+    tags: ['CodeIgniter', 'MySQL', 'Bootstrap'],
+    url: 'https://pmns.dostmimaropa.com',
   },
   {
     previewClass: 'p2',

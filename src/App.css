@@ -691,6 +691,19 @@
   line-height: 1.6;
 }
 
+.proj-link {
+  display: inline-block;
+  margin-bottom: 8px;
+  font-size: 9px;
+  font-family: var(--mono);
+  color: var(--cyan);
+  text-decoration: none;
+}
+
+.proj-link:hover {
+  text-decoration: underline;
+}
+
 .proj-tags {
   display: flex;
   flex-wrap: wrap;
