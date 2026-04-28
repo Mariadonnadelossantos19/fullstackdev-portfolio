@@ -13,7 +13,7 @@ import {
   QaPage,
   StackPage,
   TimelinePage,
-} from './pages'
+} from './Pages'
 import './App.css'
 
 function App() {
