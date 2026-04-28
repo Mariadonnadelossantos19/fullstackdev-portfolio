@@ -1045,6 +1045,20 @@
   font-family: var(--mono);
   text-align: center;
   flex: 1;
+  min-width: 0;
+}
+
+.page-indicator-index {
+  color: var(--text);
+}
+
+.page-indicator-name {
+  display: inline-block;
+  max-width: 18ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: bottom;
 }
 
 .readme-badge {
@@ -1276,6 +1290,10 @@
     line-height: 1.4;
   }
 
+  .page-indicator-name {
+    max-width: 12ch;
+  }
+
   .qa-cat-title {
     letter-spacing: 0.06em;
     gap: 6px;
@@ -1318,6 +1336,21 @@
   .status-right {
     width: 100%;
     justify-content: flex-start;
+  }
+
+  .page-indicator-sep {
+    display: none;
+  }
+
+  .page-indicator {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 6px;
+  }
+
+  .page-indicator-name {
+    max-width: 11ch;
   }
 }
 

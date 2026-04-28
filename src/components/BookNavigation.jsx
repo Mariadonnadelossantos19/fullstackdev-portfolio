@@ -1,6 +1,10 @@
-import { PAGE_LABELS } from '../constants/portfolioMeta'
+import { PAGE_NAMES } from '../constants/portfolioMeta'
 
 export function BookNavigation({ current, totalPages, onNavigate }) {
+  const pageNumber = String(current + 1).padStart(2, '0')
+  const totalNumber = String(totalPages).padStart(2, '0')
+  const pageName = PAGE_NAMES[current] ?? ''
+
   return (
     <div className="nav-arrows">
       <button
@@ -12,7 +16,11 @@ export function BookNavigation({ current, totalPages, onNavigate }) {
         ← prev.page
       </button>
       <span className="page-indicator" aria-live="polite">
-        {PAGE_LABELS[current]}
+        <span className="page-indicator-index">
+          {pageNumber} / {totalNumber}
+        </span>
+        <span className="page-indicator-sep"> — </span>
+        <span className="page-indicator-name">{pageName}</span>
       </span>
       <button
         type="button"

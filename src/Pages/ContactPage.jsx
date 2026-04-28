@@ -28,25 +28,28 @@ export function ContactPage({ pageIndex, active }) {
       <div className="readme-badge badge-amber">open-to-relocation</div>
       <div className="contact-grid" style={{ marginTop: 20 }}>
         <ContactField label="EMAIL">
-          <a className="contact-item-val" href="mailto:maria@fidelino.dev">
+          <a className="contact-item-val" href="mariadonna031@gmail.com">
             maria@fidelino.dev
           </a>
         </ContactField>
         <ContactField label="PHONE">
-          <div className="contact-item-val">+63 917 xxx xxxx</div>
+          <div className="contact-item-val">09664863891</div>
         </ContactField>
         <ContactField label="LINKEDIN">
-          <div className="contact-item-val">in/maria-fidelino</div>
+          <div className="contact-item-val">https://www.linkedin.com/in/fidelinomadonna</div>
         </ContactField>
         <ContactField label="GITHUB">
           <a
             className="contact-item-val"
-            href="https://github.com/mdfidelino"
+            href="https://github.com/Mariadonnadelossantos19"
             target="_blank"
             rel="noopener noreferrer"
           >
             github.com/mdfidelino
           </a>
+        </ContactField>
+        <ContactField label="FACEBOOK">
+          <div className="contact-item-val">https://www.facebook.com/thomas.kuc.737/</div>
         </ContactField>
       </div>
       <button type="button" className="hire-btn">
