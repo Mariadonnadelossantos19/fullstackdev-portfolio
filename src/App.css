@@ -306,27 +306,23 @@
 
 .cover-tech-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 8px;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 4px;
 }
 
 .cover-tech-item {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 8px;
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  background: #101225;
+  padding: 4px;
+  border: none;
+  border-radius: 0;
+  background: transparent;
 }
 
 .cover-tech-icon {
   width: 26px;
   height: 26px;
-  object-fit: contain;
-  flex-shrink: 0;
-  border-radius: 3px;
-  background: rgba(255, 255, 255, 0.95);
   padding: 2px;
 }
 
