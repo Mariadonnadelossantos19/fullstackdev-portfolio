@@ -306,32 +306,28 @@
 
 .cover-tech-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 8px;
 }
 
 .cover-tech-item {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  gap: 6px;
-  min-width: 0;
-  padding: 5px 8px;
+  justify-content: center;
+  padding: 8px;
   border: 1px solid var(--border);
   border-radius: 6px;
-  font-family: var(--mono);
-  font-size: 10px;
-  color: var(--text);
   background: #101225;
 }
 
 .cover-tech-icon {
-  width: 18px;
-  height: 18px;
+  width: 26px;
+  height: 26px;
   object-fit: contain;
   flex-shrink: 0;
   border-radius: 3px;
   background: rgba(255, 255, 255, 0.95);
-  padding: 1px;
+  padding: 2px;
 }
 
 .cover-photo-card {

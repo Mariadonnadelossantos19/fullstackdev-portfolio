@@ -40,59 +40,93 @@ export function CoverPage({ pageIndex, active, goToPage }) {
           <div className="cover-tech-panel" aria-label="Frameworks and programming languages">
             <div className="cover-tech-title">// frameworks & languages</div>
             <div className="cover-tech-grid">
-              <span className="cover-tech-item">
+              <span className="cover-tech-item" title="JavaScript">
                 <img
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
                   alt="JavaScript"
                   className="cover-tech-icon"
                   loading="lazy"
                 />
-                JavaScript
               </span>
-              <span className="cover-tech-item">
+              <span className="cover-tech-item" title="PHP">
                 <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
-                  alt="TypeScript"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg"
+                  alt="PHP"
                   className="cover-tech-icon"
                   loading="lazy"
                 />
-                TypeScript
               </span>
-              <span className="cover-tech-item">
+              <span className="cover-tech-item" title="React">
                 <img
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg"
                   alt="React"
                   className="cover-tech-icon"
                   loading="lazy"
                 />
-                React
               </span>
-              <span className="cover-tech-item">
+              <span className="cover-tech-item" title="CodeIgniter">
                 <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"
-                  alt="Next.js"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/codeigniter/codeigniter-plain.svg"
+                  alt="CodeIgniter"
                   className="cover-tech-icon"
                   loading="lazy"
                 />
-                Next.js
               </span>
-              <span className="cover-tech-item">
+              <span className="cover-tech-item" title="Node.js">
                 <img
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg"
                   alt="Node.js"
                   className="cover-tech-icon"
                   loading="lazy"
                 />
-                Node.js
               </span>
-              <span className="cover-tech-item">
+              <span className="cover-tech-item" title="Laravel">
                 <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
-                  alt="PostgreSQL"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg"
+                  alt="Laravel"
                   className="cover-tech-icon"
                   loading="lazy"
                 />
-                PostgreSQL
+              </span>
+              <span className="cover-tech-item" title="MySQL">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg"
+                  alt="MySQL"
+                  className="cover-tech-icon"
+                  loading="lazy"
+                />
+              </span>
+              <span className="cover-tech-item" title="MongoDB">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg"
+                  alt="MongoDB"
+                  className="cover-tech-icon"
+                  loading="lazy"
+                />
+              </span>
+              <span className="cover-tech-item" title="GitHub">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+                  alt="GitHub"
+                  className="cover-tech-icon"
+                  loading="lazy"
+                />
+              </span>
+              <span className="cover-tech-item" title="Postman">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg"
+                  alt="Postman"
+                  className="cover-tech-icon"
+                  loading="lazy"
+                />
+              </span>
+              <span className="cover-tech-item" title="Selenium">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/selenium/selenium-original.svg"
+                  alt="Selenium"
+                  className="cover-tech-icon"
+                  loading="lazy"
+                />
               </span>
             </div>
           </div>
