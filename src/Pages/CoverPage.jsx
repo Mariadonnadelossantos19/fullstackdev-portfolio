@@ -41,22 +41,58 @@ export function CoverPage({ pageIndex, active, goToPage }) {
             <div className="cover-tech-title">// frameworks & languages</div>
             <div className="cover-tech-grid">
               <span className="cover-tech-item">
-                <span className="cover-tech-logo">JS</span> JavaScript
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                  alt="JavaScript"
+                  className="cover-tech-icon"
+                  loading="lazy"
+                />
+                JavaScript
               </span>
               <span className="cover-tech-item">
-                <span className="cover-tech-logo">TS</span> TypeScript
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+                  alt="TypeScript"
+                  className="cover-tech-icon"
+                  loading="lazy"
+                />
+                TypeScript
               </span>
               <span className="cover-tech-item">
-                <span className="cover-tech-logo">R</span> React
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg"
+                  alt="React"
+                  className="cover-tech-icon"
+                  loading="lazy"
+                />
+                React
               </span>
               <span className="cover-tech-item">
-                <span className="cover-tech-logo">N</span> Next.js
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"
+                  alt="Next.js"
+                  className="cover-tech-icon"
+                  loading="lazy"
+                />
+                Next.js
               </span>
               <span className="cover-tech-item">
-                <span className="cover-tech-logo">EX</span> Express
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg"
+                  alt="Node.js"
+                  className="cover-tech-icon"
+                  loading="lazy"
+                />
+                Node.js
               </span>
               <span className="cover-tech-item">
-                <span className="cover-tech-logo">PG</span> PostgreSQL
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
+                  alt="PostgreSQL"
+                  className="cover-tech-icon"
+                  loading="lazy"
+                />
+                PostgreSQL
               </span>
             </div>
           </div>

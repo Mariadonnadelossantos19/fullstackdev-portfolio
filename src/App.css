@@ -324,17 +324,14 @@
   background: #101225;
 }
 
-.cover-tech-logo {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 24px;
+.cover-tech-icon {
+  width: 18px;
   height: 18px;
-  border: 1px solid rgba(0, 255, 136, 0.3);
-  border-radius: 4px;
-  color: var(--green);
-  font-size: 8px;
-  letter-spacing: 0.05em;
+  object-fit: contain;
+  flex-shrink: 0;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 1px;
 }
 
 .cover-photo-card {
