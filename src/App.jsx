@@ -1,4 +1,4 @@
-import { useCallback, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 import { BookNavigation } from './components/BookNavigation'
 import { BackgroundMotionVideo } from './components/BackgroundMotionVideo'
 import { IdeTabs } from './components/IdeTabs'
@@ -18,6 +18,10 @@ import './App.css'
 
 function App() {
   const [current, setCurrent] = useState(0)
+  const [theme, setTheme] = useState(() => {
+    const stored = window.localStorage.getItem('portfolio-theme')
+    return stored === 'light' ? 'light' : 'dark'
+  })
 
   const goToPage = useCallback((n) => {
     setCurrent(Math.max(0, Math.min(PAGE_COUNT - 1, n)))
@@ -31,6 +35,15 @@ function App() {
   )
 
   const lnNum = current * 42 + 1
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme)
+    window.localStorage.setItem('portfolio-theme', theme)
+  }, [theme])
+
+  const toggleTheme = useCallback(() => {
+    setTheme((prev) => (prev === 'dark' ? 'light' : 'dark'))
+  }, [])
 
   return (
     <>
@@ -51,7 +64,7 @@ function App() {
 
           <BookNavigation current={current} totalPages={PAGE_COUNT} onNavigate={navigate} />
 
-          <PortfolioStatusBar lineNumber={lnNum} />
+          <PortfolioStatusBar lineNumber={lnNum} theme={theme} onToggleTheme={toggleTheme} />
         </div>
       </div>
     </>

@@ -10,8 +10,8 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.32;
-  filter: brightness(0.3) saturate(1.15) blur(1px);
+  opacity: 0.56;
+  filter: brightness(0.62) saturate(1.2) blur(0.6px);
   transform: scale(1.05);
 }
 
@@ -19,15 +19,15 @@
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(circle at 20% 20%, rgba(0, 212, 255, 0.08), transparent 45%),
-    radial-gradient(circle at 80% 70%, rgba(0, 255, 136, 0.08), transparent 40%),
-    linear-gradient(180deg, rgba(7, 8, 16, 0.55), rgba(7, 8, 16, 0.82));
+    radial-gradient(circle at 20% 20%, rgba(0, 212, 255, 0.1), transparent 45%),
+    radial-gradient(circle at 80% 70%, rgba(0, 255, 136, 0.1), transparent 40%),
+    linear-gradient(180deg, rgba(7, 8, 16, 0.28), rgba(7, 8, 16, 0.58));
 }
 
 .background-video-vignette {
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at center, transparent 35%, rgba(7, 8, 16, 0.72) 100%);
+  background: radial-gradient(circle at center, transparent 32%, rgba(7, 8, 16, 0.48) 100%);
 }
 
 .portfolio {
@@ -800,6 +800,21 @@
   flex-wrap: wrap;
 }
 
+.theme-toggle-btn {
+  padding: 3px 8px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.18);
+  color: var(--cyan);
+  font-family: var(--mono);
+  font-size: 9px;
+  cursor: pointer;
+}
+
+.theme-toggle-btn:hover {
+  border-color: var(--cyan);
+}
+
 .status-dot {
   width: 6px;
   height: 6px;
@@ -960,7 +975,7 @@
 /* Tablet: single column for dense grids, lighter decoration */
 @media (max-width: 768px) {
   .background-video {
-    opacity: 0.24;
+    opacity: 0.46;
   }
 
   .book-container {
@@ -1072,7 +1087,7 @@
 /* Small phones */
 @media (max-width: 400px) {
   .background-video {
-    opacity: 0.2;
+    opacity: 0.4;
     transform: scale(1.02);
   }
 
@@ -1138,4 +1153,44 @@
   .proj-card:hover {
     transform: none;
   }
+}
+
+[data-theme='light'] .background-video {
+  opacity: 0.36;
+  filter: brightness(0.82) saturate(1.05) blur(0.4px);
+}
+
+[data-theme='light'] .background-video-tint {
+  background:
+    radial-gradient(circle at 20% 20%, rgba(0, 144, 197, 0.08), transparent 45%),
+    radial-gradient(circle at 80% 70%, rgba(0, 184, 107, 0.08), transparent 40%),
+    linear-gradient(180deg, rgba(244, 247, 255, 0.48), rgba(244, 247, 255, 0.72));
+}
+
+[data-theme='light'] .background-video-vignette {
+  background: radial-gradient(circle at center, transparent 35%, rgba(244, 247, 255, 0.5) 100%);
+}
+
+[data-theme='light'] .ide-tabs,
+[data-theme='light'] .book-container,
+[data-theme='light'] .status-bar,
+[data-theme='light'] .nav-arrows {
+  background: var(--surface);
+}
+
+[data-theme='light'] .tab:hover {
+  background: var(--surface2);
+}
+
+[data-theme='light'] .tab.active {
+  background: var(--surface2);
+}
+
+[data-theme='light'] .stat-card,
+[data-theme='light'] .tech-group,
+[data-theme='light'] .proj-card,
+[data-theme='light'] .qa-item,
+[data-theme='light'] .tl-body,
+[data-theme='light'] .contact-item {
+  background: var(--surface2);
 }

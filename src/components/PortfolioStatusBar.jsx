@@ -1,4 +1,4 @@
-export function PortfolioStatusBar({ lineNumber }) {
+export function PortfolioStatusBar({ lineNumber, theme, onToggleTheme }) {
   return (
     <div className="status-bar">
       <div className="status-left">
@@ -9,6 +9,9 @@ export function PortfolioStatusBar({ lineNumber }) {
         <span>TypeScript JSX</span>
       </div>
       <div className="status-right">
+        <button type="button" className="theme-toggle-btn" onClick={onToggleTheme}>
+          {theme === 'dark' ? 'night:on' : 'night:off'}
+        </button>
         <span>
           Ln <span id="ln-num">{lineNumber}</span>
         </span>
