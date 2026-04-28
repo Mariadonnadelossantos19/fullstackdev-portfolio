@@ -1,0 +1,7 @@
+export { AboutPage } from './AboutPage'
+export { ContactPage } from './ContactPage'
+export { CoverPage } from './CoverPage'
+export { ProjectsPage } from './ProjectsPage'
+export { QaPage } from './QaPage'
+export { StackPage } from './StackPage'
+export { TimelinePage } from './TimelinePage'
