@@ -378,6 +378,34 @@
   color: var(--amber);
 }
 
+.about-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(220px, 0.8fr);
+  gap: clamp(16px, 3vw, 28px);
+  align-items: start;
+}
+
+.about-photo-card {
+  margin: 0;
+  background: #0a0b14;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow:
+    0 10px 28px rgba(0, 0, 0, 0.28),
+    inset 0 0 0 1px rgba(0, 212, 255, 0.06);
+}
+
+.about-photo {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center 20%;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 212, 255, 0.16);
+}
+
 .stats-row {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1045,6 +1073,14 @@
     grid-template-columns: minmax(0, 1fr);
   }
 
+  .about-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .about-photo-card {
+    max-width: 320px;
+  }
+
   .section-label {
     letter-spacing: 0.12em;
   }
@@ -1079,6 +1115,10 @@
 
   .stats-row {
     grid-template-columns: minmax(0, 1fr);
+  }
+
+  .about-photo-card {
+    max-width: 100%;
   }
 
   .contact-grid {
