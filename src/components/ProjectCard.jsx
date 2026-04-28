@@ -1,8 +1,20 @@
-export function ProjectCard({ previewClass, icon, title, description, tags, url }) {
+export function ProjectCard({
+  previewClass,
+  icon,
+  title,
+  description,
+  tags,
+  url,
+  previewImage,
+  previewImageAlt = 'Project preview',
+}) {
   return (
     <article className="proj-card">
       <div className={`proj-preview ${previewClass}`}>
-        <div className="proj-icon">{icon}</div>
+        {previewImage ? (
+          <img src={previewImage} alt={previewImageAlt} className="proj-preview-image" loading="lazy" />
+        ) : null}
+        <div className={`proj-icon${previewImage ? ' has-image' : ''}`}>{icon}</div>
       </div>
       <div className="proj-body">
         <div className="proj-title">{title}</div>

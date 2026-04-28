@@ -11,6 +11,8 @@ const PROJECTS = [
       'Project Monitoring and Notification System for DOST-MIMAROPA, designed to streamline tracking, updates, and reporting workflows.',
     tags: ['CodeIgniter', 'MySQL', 'Bootstrap'],
     url: 'https://pmns.dostmimaropa.com',
+    previewImage: 'https://image.thum.io/get/width/800/https://pmns.dostmimaropa.com',
+    previewImageAlt: 'PMNS system landing page preview',
   },
   {
     previewClass: 'p2',
