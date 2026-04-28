@@ -18,14 +18,21 @@ import './App.css'
 
 function App() {
   const [current, setCurrent] = useState(0)
+  const [navDirection, setNavDirection] = useState('forward')
   const [theme, setTheme] = useState(() => {
     const stored = window.localStorage.getItem('portfolio-theme')
     return stored === 'light' ? 'light' : 'dark'
   })
 
-  const goToPage = useCallback((n) => {
-    setCurrent(Math.max(0, Math.min(PAGE_COUNT - 1, n)))
-  }, [])
+  const goToPage = useCallback(
+    (n) => {
+      const clamped = Math.max(0, Math.min(PAGE_COUNT - 1, n))
+      if (clamped === current) return
+      setNavDirection(clamped > current ? 'forward' : 'backward')
+      setCurrent(clamped)
+    },
+    [current]
+  )
 
   const navigate = useCallback(
     (dir) => {
@@ -51,7 +58,7 @@ function App() {
       <div className="portfolio">
         <IdeTabs current={current} onSelect={goToPage} />
 
-        <div className="book-container">
+        <div className={`book-container nav-${navDirection}`}>
           <MatrixBackground />
 
           <CoverPage pageIndex={0} active={current === 0} goToPage={goToPage} />
