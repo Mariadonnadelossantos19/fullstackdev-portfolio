@@ -10,7 +10,7 @@ export function ProjectCard({
 }) {
   return (
     <article className="proj-card">
-      <div className={`proj-preview ${previewClass}`}>
+      <div className={`proj-preview ${previewClass}${previewImage ? ' has-image' : ''}`}>
         {previewImage ? (
           <img src={previewImage} alt={previewImageAlt} className="proj-preview-image" loading="lazy" />
         ) : null}
