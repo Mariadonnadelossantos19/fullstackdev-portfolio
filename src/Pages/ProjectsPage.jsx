@@ -33,7 +33,8 @@ const PROJECTS = [
       'Supply management platform for TSD units with real-time stock visibility, controlled access roles, and input/output movement tracking.',
     tags: ['Laravel', 'Monitoring', 'Inventory'],
     url: 'https://cimon.dostmimaropa.com/',
-    previewImage: 'https://mini.s-shot.ru/1366x768/JPEG/1366/Z100/?https://cimon.dostmimaropa.com/',
+    previewImage:
+      'https://s.wordpress.com/mshots/v1/https%3A%2F%2Fcimon.dostmimaropa.com%2F?w=1200',
     previewImageAlt: 'CIMON landing page preview',
   },
   {
