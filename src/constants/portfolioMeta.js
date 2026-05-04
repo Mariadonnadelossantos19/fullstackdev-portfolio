@@ -4,18 +4,20 @@ export const PAGE_NAMES = [
   'stack.json',
   'projects.tsx',
   'qa.test.ts',
+  'services.md',
   'timeline.yml',
   'contact.md',
 ]
 
 export const PAGE_LABELS = [
-  '01 / 07 — cover.tsx',
-  '02 / 07 — about.md',
-  '03 / 07 — stack.json',
-  '04 / 07 — projects.tsx',
-  '05 / 07 — qa.test.ts',
-  '06 / 07 — timeline.yml',
-  '07 / 07 — contact.md',
+  '01 / 08 — cover.tsx',
+  '02 / 08 — about.md',
+  '03 / 08 — stack.json',
+  '04 / 08 — projects.tsx',
+  '05 / 08 — qa.test.ts',
+  '06 / 08 — services.md',
+  '07 / 08 — timeline.yml',
+  '08 / 08 — contact.md',
 ]
 
 export const PAGE_COUNT = PAGE_NAMES.length

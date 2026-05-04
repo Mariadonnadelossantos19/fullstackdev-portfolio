@@ -11,6 +11,7 @@ import {
   CoverPage,
   ProjectsPage,
   QaPage,
+  ServicesPage,
   StackPage,
   TimelinePage,
 } from './Pages'
@@ -61,13 +62,14 @@ function App() {
         <div className={`book-container nav-${navDirection}`}>
           <MatrixBackground />
 
-          <CoverPage pageIndex={0} active={current === 0} goToPage={goToPage} />
+          <CoverPage pageIndex={0} active={current === 0} />
           <AboutPage pageIndex={1} active={current === 1} />
           <StackPage pageIndex={2} active={current === 2} />
           <ProjectsPage pageIndex={3} active={current === 3} />
           <QaPage pageIndex={4} active={current === 4} />
-          <TimelinePage pageIndex={5} active={current === 5} />
-          <ContactPage pageIndex={6} active={current === 6} />
+          <ServicesPage pageIndex={5} active={current === 5} />
+          <TimelinePage pageIndex={6} active={current === 6} />
+          <ContactPage pageIndex={7} active={current === 7} />
 
           <BookNavigation current={current} totalPages={PAGE_COUNT} onNavigate={navigate} />
 

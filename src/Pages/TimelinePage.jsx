@@ -21,7 +21,7 @@ export function TimelinePage({ pageIndex, active }) {
           role="Full Stack Developer"
           company="Department of Science and Technology-MIMAROPA"
           period="August 2025 — Present · Full-time"
-          description="Lead end-to-end development and maintenance of the Department of Science and Technology-MIMAROPA website using CodeIgniter and MySQL. As the primary developer, handle system analysis, QA validation, and project coordination to deliver reliable, user-focused releases."
+          description="Lead end-to-end development and maintenance of systems for DOST-MIMAROPA using HTML, React, CSS, Bootstrap, Tailwind CSS, Node.js, Express, Python, Django, JavaScript, Laravel, PHP, and CodeIgniter with MySQL and MongoDB. As the primary developer, I also handle QA validation and delivery workflows using Git, GitHub Actions, Postman, Insomnia, and Figma to ship reliable, user-focused releases."
         />
         <TimelineEntry
           year="2025"

@@ -1,8 +1,9 @@
 import { PortfolioPage } from '../components/PortfolioPage'
 import { TerminalHeader } from '../components/TerminalHeader'
 import profileImage from '../assets/img/profile2.png'
+import resumePdf from '../assets/documents/Fidelino Update resume.pdf'
 
-export function CoverPage({ pageIndex, active, goToPage }) {
+export function CoverPage({ pageIndex, active }) {
   return (
     <PortfolioPage pageIndex={pageIndex} active={active} className="cover-page">
       <TerminalHeader />
@@ -141,12 +142,16 @@ export function CoverPage({ pageIndex, active, goToPage }) {
         available for hire — 2026
       </div>
       <div style={{ marginTop: 24 }}>
-        <button type="button" className="cta-btn" onClick={() => goToPage(1)}>
-          $ open portfolio.book --interactive{' '}
+        <a
+          href={resumePdf}
+          download="Maria-Donna-Fidelino-Resume.pdf"
+          className="cta-btn"
+        >
+          $ download resume{' '}
           <span className="blink" aria-hidden>
             ▌
           </span>
-        </button>
+        </a>
       </div>
     </PortfolioPage>
   )
