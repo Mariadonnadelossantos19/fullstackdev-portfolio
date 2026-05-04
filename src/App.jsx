@@ -7,12 +7,15 @@ import { PortfolioStatusBar } from './components/PortfolioStatusBar'
 import { PAGE_COUNT } from './constants/portfolioMeta'
 import {
   AboutPage,
+  BlogPage,
+  CertificatesPage,
   ContactPage,
   CoverPage,
   ProjectsPage,
   QaPage,
   ServicesPage,
   StackPage,
+  TestimonialPage,
   TimelinePage,
 } from './Pages'
 import './App.css'
@@ -69,7 +72,10 @@ function App() {
           <QaPage pageIndex={4} active={current === 4} />
           <ServicesPage pageIndex={5} active={current === 5} />
           <TimelinePage pageIndex={6} active={current === 6} />
-          <ContactPage pageIndex={7} active={current === 7} />
+          <TestimonialPage pageIndex={7} active={current === 7} />
+          <BlogPage pageIndex={8} active={current === 8} />
+          <CertificatesPage pageIndex={9} active={current === 9} />
+          <ContactPage pageIndex={10} active={current === 10} />
 
           <BookNavigation current={current} totalPages={PAGE_COUNT} onNavigate={navigate} />
 

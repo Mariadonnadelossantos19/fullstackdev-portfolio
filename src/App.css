@@ -861,6 +861,216 @@
   color: var(--muted);
 }
 
+.testimonials-grid {
+  display: grid;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.testimonial-card {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  padding: 14px 16px;
+  background: #0a0b14;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  transition: border-color 0.2s;
+}
+
+.testimonial-card:hover {
+  border-color: rgba(0, 255, 136, 0.35);
+}
+
+.testimonial-avatar-wrap {
+  flex-shrink: 0;
+}
+
+.testimonial-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(0, 212, 255, 0.25);
+  display: block;
+}
+
+.testimonial-body {
+  min-width: 0;
+}
+
+.testimonial-quote {
+  margin: 0 0 10px;
+  font-size: 11px;
+  line-height: 1.65;
+  color: var(--text);
+  font-family: var(--mono);
+}
+
+.testimonial-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.testimonial-name {
+  font-family: var(--sans);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--green);
+}
+
+.testimonial-role {
+  font-size: 9px;
+  font-family: var(--mono);
+  color: var(--muted);
+  letter-spacing: 0.04em;
+}
+
+.blog-highlights-grid {
+  display: grid;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.blog-highlight-card {
+  display: block;
+  padding: 14px 16px;
+  background: #0a0b14;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.blog-highlight-card:hover {
+  border-color: var(--cyan);
+  box-shadow: 0 6px 20px rgba(0, 212, 255, 0.08);
+}
+
+.blog-highlight-card-static {
+  cursor: default;
+}
+
+.blog-highlight-card-static:hover {
+  border-color: var(--border);
+  box-shadow: none;
+}
+
+.blog-highlight-title {
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0 0 6px;
+  line-height: 1.25;
+}
+
+.blog-highlight-text {
+  margin: 0 0 8px;
+  font-size: 10px;
+  line-height: 1.6;
+  color: var(--muted);
+  font-family: var(--mono);
+}
+
+.blog-highlight-link {
+  font-size: 9px;
+  font-family: var(--mono);
+  color: var(--cyan);
+}
+
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.certificate-card {
+  background: #0a0b14;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: border-color 0.2s;
+}
+
+.certificate-card:hover {
+  border-color: rgba(0, 255, 136, 0.35);
+}
+
+.certificate-thumb {
+  position: relative;
+  background: #060710;
+  border-bottom: 1px solid var(--border);
+}
+
+.certificate-thumb-link {
+  display: block;
+  line-height: 0;
+}
+
+.certificate-img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+  background: #060710;
+}
+
+.certificate-thumb-placeholder {
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.certificate-placeholder-link {
+  font-size: 10px;
+  font-family: var(--mono);
+  color: var(--cyan);
+  text-decoration: none;
+}
+
+.certificate-placeholder-link:hover {
+  text-decoration: underline;
+}
+
+.certificate-body {
+  padding: 12px 14px 14px;
+}
+
+.certificate-title {
+  font-family: var(--sans);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0 0 4px;
+  line-height: 1.3;
+}
+
+.certificate-issuer {
+  margin: 0 0 8px;
+  font-size: 9px;
+  font-family: var(--mono);
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.certificate-link {
+  font-size: 9px;
+  font-family: var(--mono);
+  color: var(--green);
+  text-decoration: none;
+}
+
+.certificate-link:hover {
+  text-decoration: underline;
+}
+
 .qa-list {
   margin-top: 16px;
 }
@@ -1578,6 +1788,37 @@
   .tech-icon-grid {
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
+
+  .testimonial-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 16px 14px;
+  }
+
+  .testimonial-meta {
+    align-items: center;
+  }
+
+  .testimonial-quote {
+    font-size: 10px;
+  }
+
+  .testimonial-name {
+    font-size: 11px;
+  }
+
+  .blog-highlight-title {
+    font-size: 12px;
+  }
+
+  .blog-highlight-text {
+    font-size: 9px;
+  }
+
+  .certificates-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
 }
 
 /* Small phones */
@@ -1735,9 +1976,16 @@
 [data-theme='light'] .tech-group,
 [data-theme='light'] .proj-card,
 [data-theme='light'] .qa-item,
+[data-theme='light'] .testimonial-card,
+[data-theme='light'] .blog-highlight-card,
+[data-theme='light'] .certificate-card,
 [data-theme='light'] .tl-body,
 [data-theme='light'] .contact-item {
   background: var(--surface2);
+}
+
+[data-theme='light'] .certificate-thumb {
+  background: var(--surface);
 }
 
 [data-theme='light'] .tech-group {
