@@ -1459,6 +1459,44 @@
     -webkit-overflow-scrolling: touch;
   }
 
+  .big-name {
+    font-size: clamp(30px, 11vw, 40px);
+    line-height: 0.98;
+  }
+
+  .section-title {
+    font-size: clamp(1.15rem, 5.4vw, 1.45rem);
+    line-height: 1.2;
+  }
+
+  .title-line {
+    font-size: 11px;
+    letter-spacing: 0.06em;
+  }
+
+  .about-text,
+  .tagline-block {
+    font-size: 10px;
+    line-height: 1.75;
+  }
+
+  .comment,
+  .intro-shell,
+  .term-title {
+    font-size: 10px;
+  }
+
+  .tab,
+  .mobile-menu-item,
+  .nav-btn,
+  .cta-btn {
+    font-size: 9px;
+  }
+
+  .burger-btn {
+    font-size: 9px;
+  }
+
   .terminal-header {
     margin-bottom: 24px;
   }
@@ -1553,7 +1591,25 @@
   }
 
   .big-name {
-    font-size: clamp(28px, 12vw, 46px);
+    font-size: clamp(25px, 12vw, 32px);
+  }
+
+  .section-title {
+    font-size: clamp(1.05rem, 6vw, 1.2rem);
+  }
+
+  .about-text,
+  .tagline-block {
+    font-size: 9px;
+    line-height: 1.7;
+  }
+
+  .tab,
+  .mobile-menu-item,
+  .nav-btn,
+  .cta-btn,
+  .burger-btn {
+    font-size: 8px;
   }
 
   .readme-badge {
