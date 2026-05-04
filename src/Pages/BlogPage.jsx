@@ -1,8 +1,15 @@
 import { PortfolioPage } from '../components/PortfolioPage'
 import { BlogHighlightCard } from '../components/BlogHighlightCard'
 import { SectionHeading } from '../components/SectionHeading'
+import blogHighlightVideo from '../assets/videos/blo1.mp4'
 
 const HIGHLIGHTS = [
+  {
+    title: 'Highlight reel',
+    highlight: 'Short clip from a talk / demo — tap play to watch.',
+    videoSrc: blogHighlightVideo,
+    href: 'https://example.com/blog/highlight-reel',
+  },
   {
     title: 'End-to-end delivery',
     highlight: 'From requirements and system analysis to deployment — one accountable path for lean teams.',

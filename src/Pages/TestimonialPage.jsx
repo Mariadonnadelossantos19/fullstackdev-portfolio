@@ -6,7 +6,7 @@ import kiethPhoto from '../assets/picture of  testimony/kieth.jpg'
 const TESTIMONIALS = [
   {
     photo: kiethPhoto,
-    name: 'Kieth Paolo Buenaventura',
+    name: 'Keith Paolo Buenaventura',
     role: 'Supervising Science Research Specialist',
     quote:
       'Shows strong initiative—completes tasks even without being told.',
