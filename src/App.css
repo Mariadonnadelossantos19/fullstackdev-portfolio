@@ -1364,8 +1364,23 @@
     grid-template-columns: minmax(0, 1fr);
   }
 
+  .about-text {
+    order: 2;
+  }
+
+  .about-photo-card {
+    order: 1;
+    justify-self: start;
+    margin-bottom: 8px;
+  }
+
   .cover-layout {
     grid-template-columns: minmax(0, 1fr);
+  }
+
+  .cover-copy {
+    order: 2;
+    margin-top: 0;
   }
 
   .cover-tech-grid {
@@ -1373,8 +1388,10 @@
   }
 
   .cover-photo-card {
+    order: 1;
     max-width: 320px;
     justify-self: start;
+    margin-bottom: 6px;
   }
 
   .about-photo-card {
@@ -1447,15 +1464,18 @@
   }
 
   .stats-row {
-    grid-template-columns: minmax(0, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
   }
 
   .about-photo-card {
     max-width: 100%;
+    justify-self: center;
   }
 
   .cover-photo-card {
     max-width: 100%;
+    justify-self: center;
   }
 
   .cover-tech-grid {
